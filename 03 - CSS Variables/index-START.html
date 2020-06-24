@@ -21,10 +21,25 @@
   <img src="https://source.unsplash.com/7bwQXzbF6KE/800x500">
 
   <style>
+    :root {
+      --base: yellow;
+      --spacing: 10px;
+      --blur: 10px;
+    }
+
+    .hl {
+      color: var(--base);
+    }
 
     /*
       misc styles, nothing to do with CSS variables
     */
+
+    img {
+      padding: var(--spacing);
+      background: var(--base);
+      filter: blur(var(--blur));
+    }
 
     body {
       text-align: center;
@@ -44,8 +59,7 @@
     }
   </style>
 
-  <script>
-  </script>
+  <script src="index.js"></script>
 
 </body>
 </html>
