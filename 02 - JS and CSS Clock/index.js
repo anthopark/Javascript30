@@ -19,7 +19,6 @@ function currentSecond() {
     })
 
     secondHand.style.transform = `rotate(${secToDeg}deg)`
-
 }
 
 function currentMinute() {
